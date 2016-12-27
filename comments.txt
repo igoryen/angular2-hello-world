@@ -90,3 +90,23 @@
 
 12. Add the module if you want to use it as an annotation in your code.
     e.g. Input.
+
+13. @NgModule annotation.
+    It has 3 properties:
+    declarations, imports, bootstrap.
+
+14. app.module.ts/@NgModule/declaration:
+    Specifies the components that are defined in this module.
+    This array updated when you run `ng generate`.
+
+15. app.module.ts/@NgModule/imports:
+    This module has such and such dependencies.
+
+16. The BrowserModule:
+    required if you are creating a browser app.
+
+17. app.module.ts/@NgModule/bootstrap:
+    Angular, when you bootstrap the app using this module,
+    you need to load this Component (e.g. AppComponent)
+    as the top-level component.
+

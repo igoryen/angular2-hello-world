@@ -8,15 +8,15 @@ import { HelloWorldComponent } from './hello-world/hello-world.component';
 import { UserItemComponent } from './user-item/user-item.component';
 import { UserListComponent } from './user-list/user-list.component';
 
-@NgModule({
-  declarations: [
+@NgModule({ // 5, 13
+  declarations: [ // 14
     AppComponent,
     HelloWorldComponent,
     UserItemComponent,
     UserListComponent
   ],
-  imports: [
-    BrowserModule,
+  imports: [ // 15
+    BrowserModule, // 16
     FormsModule,
     HttpModule
   ],
