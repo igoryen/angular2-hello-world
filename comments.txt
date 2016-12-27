@@ -1,10 +1,13 @@
-1. Import the dependencies: 
+1. Import the dependencies.
+    This is a list of constants.
     Pull in the modules you want to use to write your code.
     These modules are JS/TS objects.
     Here we do the Destructuring in {...}.
 
 2. The location of the dependencies. 
+
 3.
+
 4. OnInit: helps us to run code when 
 
 5. This is an annotation. 
@@ -45,7 +48,10 @@
     Add the component to the template. 
     That means add the tag you created to the template.
 
-10. Propety name: "name".
+10. Input annotation.
+    Provides a way to pass data into this Component 
+    being a child Component from the Parent Template.
+    Propety name: "name".
     Property value type: String.
 
 11. The constructor to run when a new instance of the class is created.
@@ -63,3 +69,24 @@
 14. *ngFor is a directive.
     Akin to a for loop.
     To iterate over an array and generate a DOM element (a tag) for each one.
+
+15. Using another Component as a Child Component.
+    Here: user-item ( not <li> ) as a child of user-list.
+    Don't use any content in the template 
+    because the Component has its own template.
+
+    `[foo]` means "pass a value to the input named "foo"
+    in that Component.
+
+    Thus:
+    pass a value to the input "name" in app-user-item Component.
+    [name]="name" means: 
+    input "name" in app-user-item gets the value 
+    of the next array element (even though it is double- quoted).
+    [name] designates the input on the UserItemComponent.
+    Equivalent:
+    *ngFor = "let x of names" [name]="x"
+    x designates the `Input` on the `UserInputComponent`.
+
+12. Add the module if you want to use it as an annotation in your code.
+    e.g. Input.
