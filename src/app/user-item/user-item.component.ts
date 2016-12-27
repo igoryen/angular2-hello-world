@@ -1,13 +1,17 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { // 1
+    Component, 
+    OnInit, 
+    Input 
+} from '@angular/core'; // 2
 
-@Component({
-  selector: 'app-user-item',
-  templateUrl: './user-item.component.html',
-  styleUrls: ['./user-item.component.css']
+@Component({ // 5
+  selector: 'app-user-item', // 6
+  templateUrl: './user-item.component.html', // 7
+  styleUrls: ['./user-item.component.css'] // 8
 })
 export class UserItemComponent implements OnInit {
-  @Input() name: string;
-  constructor() {
+  @Input() name: string; // 10
+  constructor() { // 11
   }
 
   ngOnInit() {

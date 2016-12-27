@@ -44,3 +44,22 @@
     After you create your new Component you need to start using it.
     Add the component to the template. 
     That means add the tag you created to the template.
+
+10. Propety name: "name".
+    Property value type: String.
+
+11. The constructor to run when a new instance of the class is created.
+
+12. The templating syntax - the two squiggly brackets.
+    They are "template tags" or "mustache tags".
+    They expand the content as an Expression.
+    The Template is bound to the Component.
+    To display the variable in the template. 
+
+13. Two ways of defining an array of strings:
+    a) names: string[];
+    b) names: Array<string>;
+
+14. *ngFor is a directive.
+    Akin to a for loop.
+    To iterate over an array and generate a DOM element (a tag) for each one.
