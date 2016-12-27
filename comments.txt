@@ -1,0 +1,46 @@
+1. Import the dependencies: 
+    Pull in the modules you want to use to write your code.
+    These modules are JS/TS objects.
+    Here we do the Destructuring in {...}.
+
+2. The location of the dependencies. 
+3.
+4. OnInit: helps us to run code when 
+
+5. This is an annotation. 
+    This is metadata added to your code.
+    Declare the component.
+    You want to use the component on your class.
+    Therefore you "decorate" the class as a Component.
+
+6. The selector name for your new tag.
+    You define a new HTML markup tag.
+    You want to use this new selector in your HTML.
+    Your new selector will have the form of 
+    <app-hello-world></app-hello-world>.
+    You will use the new Component by using this new tag.
+    Now, any <app-hello-world></app-hello-world> in the template
+    will be compiled using this Component class and all its definitions within it.
+
+7. The HTML file from which to load your template.
+    It's content is standard HTML markup.
+    This file will live in the same directory as your component.
+    When Angular loads this component, 
+    it will also read from this HTML file and use it as the template for this Component.
+
+    Another way to add a template is to put the HTML directly into the TS file
+    using the 'template' key and backticks:
+    template:  `<p>Hello World!</p>`
+
+8. The CSS file to use for this Component.
+    These styles are specified for this particular Component,
+    and they will apply only to this Component.
+    It's called "style-encapsulation".
+
+    The value of this property is an array,
+    so you can load multiple stylesheets for a single Component.
+
+9. This HTML file is a template that is already being rendered.
+    After you create your new Component you need to start using it.
+    Add the component to the template. 
+    That means add the tag you created to the template.
